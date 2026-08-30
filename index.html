@@ -104,20 +104,6 @@ header{padding:40px 0 30px;}
 .thesis{font-size:clamp(19px,5vw,25px);line-height:1.4;color:var(--ink);max-width:34ch;margin:0 0 26px;}
 .thesis em{font-style:normal;box-shadow:inset 0 -.42em 0 var(--accent-soft);}
 
-/* Intro: thesis + portrait */
-.intro{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:22px;margin-bottom:26px;}
-.intro .thesis{margin:0;}
-.portrait{flex:none;margin:0;width:120px;}
-.portrait img{
-  display:block;width:100%;height:auto;
-  border:1px solid var(--rule);background:var(--surface-2);
-}
-.portrait figcaption{
-  font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--ink-3);margin-top:8px;line-height:1.5;
-}
-
 /* Contact: real tap targets on a phone */
 .contactbar{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;font-size:12.5px;}
 .contactbar li{border-bottom:1px solid var(--rule);}
@@ -208,8 +194,6 @@ footer{
   section{padding:52px 0;}
   .role{font-size:13px;line-height:1.7;}
   .lede{font-size:19px;}
-  .intro{flex-direction:row-reverse;justify-content:flex-end;align-items:flex-start;gap:30px;}
-  .portrait{width:124px;}
   .rail{grid-template-columns:repeat(3,1fr);}
   .rail div{padding:17px 15px;}
   .rail .n{font-size:26px;}
@@ -236,7 +220,6 @@ footer{
 @media (min-width:860px){
   .wrap{padding-left:28px;padding-right:28px;padding-bottom:96px;}
   header{padding:64px 0 44px;}
-  .portrait{width:142px;}
   .rail{grid-template-columns:repeat(5,1fr);}
   .rail div:nth-child(5){grid-column:auto;}
   .rail div{padding:18px 16px;}
@@ -254,13 +237,7 @@ footer{
     <h1 class="name">Arturo Giovanni<br>Arias Granados</h1>
     <p class="role">Retail POS Functional Lead  ·  <b>GK OmniPOS</b>  ·  <b>SAP CAR</b>  ·  <b>SAP S/4HANA</b><br>León, Guanajuato, Mexico  ·  Remote  ·  Available for 20–40% international travel</p>
 
-    <div class="intro">
-      <figure class="portrait">
-        <img src="foto.jpg" width="208" height="387" alt="Arturo Giovanni Arias Granados at SAP Sapphire 2026 in Orlando">
-        <figcaption>SAP Sapphire 2026<br>Orlando</figcaption>
-      </figure>
-      <p class="thesis">I have already run a GK implementation end to end — <em>from the client's side of the table</em>. Nine years in Mexican footwear retail, 70 stores live, one platform upgrade with zero downtime.</p>
-    </div>
+    <p class="thesis">I have already run a GK implementation end to end — <em>from the client's side of the table</em>. Nine years in Mexican footwear retail, 70 stores live, one platform upgrade with zero downtime.</p>
 
     <ul class="contactbar">
       <li><a href="mailto:giovanni.535.ga@gmail.com"><span class="ic" aria-hidden="true">✉</span>giovanni.535.ga@gmail.com</a></li>
